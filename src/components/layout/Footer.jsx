@@ -8,8 +8,8 @@ import Image from "next/image";
 const Footer = () => {
   const { paymentArry } = allImages;
   return (
-    <footer>
-      <div className="bg-[#eb652b0f]">
+    <footer >
+      <div className="bg-[#eb652b0f] rounded-[24px] lg:mx-[30px]">
         <Container>
           <div className="pt-[95px] pb-[64px] flex justify-between border-b border-[#eb652b42]">
             <p className="title1 !font-medium text-dark ">
@@ -97,6 +97,7 @@ const Footer = () => {
                   <Image
                     key={items.id}
                     src={items.img}
+                    alt={items.img}
                    
                     className="w-[80px] h-[25px] object-cover"
                   />

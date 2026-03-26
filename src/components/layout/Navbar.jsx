@@ -8,16 +8,26 @@ import { navLinks, navLinksleft } from "@/helper/projectsData";
 const Navbar = () => {
   const { navlogo } = allImages;
   return (
-    <nav className="py-[21px] bg-primary border-b border-white">
+    <nav className="py-[21px] fixed  top-0 left-0  w-full  border-b border-white">
       <Container>
         <div className="flex items-center  justify-between ">
           <div className="flex  items-center gap-x-[50px]">
-            <Image src={navlogo} alt="nav-images" width={167} height={32} />
+            <Image
+              src={navlogo}
+              width={167}
+              height={32}
+              alt="logo"
+              loading="eager"
+              priority
+            />
             <ul className="flex items-center gap-x-[39px]  ">
               {navLinks.map((items) => {
                 return (
                   <li key={items.id}>
-                    <Link href={items.path} className=" title4 text-white transition duration-300 ease-in-out hover:text-accent">
+                    <Link
+                      href={items.path}
+                      className=" title4 text-white transition duration-300 ease-in-out hover:text-accent"
+                    >
                       {items.label}
                     </Link>
                   </li>
@@ -39,7 +49,10 @@ const Navbar = () => {
                   </li>
                 ) : (
                   <li key={items.id}>
-                    <Link href={items.href} className="title4 text-white transition duration-300 ease-in-out hover:text-accent">
+                    <Link
+                      href={items.href}
+                      className="title4 text-white transition duration-300 ease-in-out hover:text-accent"
+                    >
                       {items.label}
                     </Link>
                   </li>

@@ -1,9 +1,14 @@
-import React from 'react'
+import Bannar from "@/components/sections/home/Bannar";
+import Trending from "@/components/sections/home/Trending";
+import React from "react";
 
 const Home = () => {
   return (
-    <div className='heading'>This is home pages</div>
-  )
-}
+    <>
+      <Bannar />
+      <Trending/>
+    </>
+  );
+};
 
-export default Home
+export default Home;

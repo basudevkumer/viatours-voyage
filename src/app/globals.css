@@ -75,7 +75,7 @@
    Use: Section titles (Trending destinations, Featured Trips, Popular things to do)
    Weight: SemiBold */
 .heading {
-  @apply text-2xl/[120%] font-semibold tracking-[-0.1px];
+  @apply text-4xl/[120%] font-semibold tracking-[-0.1px];
 }
 
 /* Title 01 - 20px / 120%
