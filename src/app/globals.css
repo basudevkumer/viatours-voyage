@@ -1,1 +1,136 @@
 @import "tailwindcss";
+
+@theme {
+  /* Primary gradient */
+  --color-primary-start: #888bf4;
+  --color-primary-end: #5151c6;
+
+  /* Status */
+  --color-error: #e95050;
+
+  /* Background colors */
+  --color-field-background: #f3f5f7;
+  --color-grey-background: #f6f7f9;
+  --color-primary-background: #f1f1fe;
+  --color-overlay-bg: #333333d0;
+
+  /* Section backgrounds (design থেকে exact) */
+  --color-section-cream: #fdf6f0;   /* Footprints & Why choose section */
+  --color-footer-bg: #1c2d4f;       /* Dark navy footer */
+
+  /* Accent */
+  --color-accent-orange: #e87722;   /* Icons color */
+
+  /* Gray shades */
+  --color-gray1: #333333;
+  --color-gray2: #4f4f4f;
+  --color-gray3: #828282;
+  --color-gray4: #bdbdbd;
+  --color-gray5: #e0e0e0;
+  --color-gray6: #ecedee;
+  --color-gray7: #f2f2f2;
+  --color-white: #ffffff;
+
+  /* Text colors */
+  --color-text-primary: #242424;
+  --color-text-secondary: #828282;
+  --color-text-placeholder: #bdbdbd;
+  --color-text-tertiary: #bdbdbd;
+}
+
+@layer utilities {
+  .bg-primary {
+    background: linear-gradient(to left, #888bf4 0%, #5151c6 100%);
+  }
+  .text-primary {
+    background: linear-gradient(to left, #888bf4 0%, #5151c6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* ===================== */
+/*       TYPOGRAPHY      */
+/* ===================== */
+
+/* Heading - 24px / 120%
+   Use: Section titles (Trending destinations, Featured Trips, Popular things to do)
+   Weight: SemiBold */
+.heading {
+  @apply text-2xl/[120%] font-semibold tracking-[-0.1px];
+}
+
+/* Title 01 - 20px / 120%
+   Use: Card main titles, Why choose titles
+   Weight: SemiBold */
+.title1 {
+  @apply text-xl/[120%] font-semibold;
+}
+
+/* Title 02 - 18px / 120%
+   Use: Sub section titles
+   Weight: SemiBold */
+.title2 {
+  @apply text-lg/[120%] font-semibold tracking-[-0.1px];
+}
+
+/* Title 03 - 16px / 120%
+   Use: Navbar links, small titles
+   Weight: Medium */
+.title3 {
+  @apply text-base/[120%] font-medium tracking-[-0.1px];
+}
+
+/* Title 04 - 14px / 120%
+   Use: Small labels, tags
+   Weight: Medium */
+.title4 {
+  @apply text-sm/[120%] font-medium;
+}
+
+/* Body semibold - 16px / 150%
+   Use: Highlighted body text
+   Weight: SemiBold */
+.body-semibold {
+  @apply text-base/[150%] font-semibold tracking-[-0.3px];
+}
+
+/* Body 01 - 18px / 150%
+   Use: Hero description, large body
+   Weight: Regular */
+.body1 {
+  @apply text-lg/[150%] font-normal tracking-[-0.4px];
+}
+
+/* Body 03 - 16px / 150%
+   Use: Card description, general body
+   Weight: Regular */
+.body3 {
+  @apply text-base/[150%] font-normal tracking-[-0.2px];
+}
+
+/* Body 04 - 14px / 150%
+   Use: Small description (tour count etc)
+   Weight: Regular */
+.body4 {
+  @apply text-sm/[150%] font-normal tracking-[-0.1px];
+}
+
+/* Body 05 - 12px / 150%
+   Use: Tiny labels, tags on cards
+   Weight: Regular */
+.body5 {
+  @apply text-xs/[150%] font-normal tracking-[-0.1px];
+}
+
+/* Caption - 14px / 120%
+   Use: Date, author text in articles
+   Weight: Regular */
+.caption {
+  @apply text-sm/[120%] font-normal tracking-[2px];
+}
+
+
+.ddd{
+  color: #eb652b0f;
+}
