@@ -3,17 +3,11 @@ import Image from "next/image";
 const TripCard = ({ image, days, location, title, rating, reviews, price }) => {
   return (
     <div className="relative rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow w-full h-[450px]">
-      
       {/* Background Image */}
-      <Image
-        src={image}
-        alt={title}
-        fill
-        className="object-cover"
-      />
+      <Image src={image} alt={title} fill className="object-cover" />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#05073C]/70 from-20%   via-[#05073C]/20   to-transparent " />
 
       {/* Days Badge - top left */}
       <span className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white body5 px-3 py-1 rounded-full">
@@ -38,7 +32,6 @@ const TripCard = ({ image, days, location, title, rating, reviews, price }) => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };
