@@ -1,4 +1,5 @@
 import Bannar from "@/components/sections/home/Bannar";
+import BestPlace from "@/components/sections/home/BestPlace";
 import ChooseTour from "@/components/sections/home/ChooseTour";
 import Footprints from "@/components/sections/home/Footprints";
 import Popular from "@/components/sections/home/Popular";
@@ -15,6 +16,7 @@ const Home = () => {
       <ChooseTour />
       <Popular />
       <Footprints />
+      <BestPlace/>
     </>
   );
 };
