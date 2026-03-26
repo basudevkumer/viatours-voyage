@@ -222,6 +222,29 @@ const allImages = {
     },
   ],
   tourImages: TourBanner,
+  popularThings: [
+    { id: 1, image: Singapure, title: "City Tours", count: "100+ Tours" },
+    { id: 2, image: Cappadocia, title: "Cultural Tours", count: "100+ Tours" },
+    { id: 3, image: Phuket, title: "Day Cruises", count: "100+ Tours" },
+    { id: 4, image: London, title: "Budget Tours", count: "100+ Tours" },
+    { id: 5, image: Dubai, title: "Adventure Tours", count: "100+ Tours" },
+    { id: 6, image: Santorini, title: "Beach Tours", count: "100+ Tours" },
+    { id: 7, image: Barcelona, title: "Food Tours", count: "100+ Tours" },
+    { id: 8, image: Maldives, title: "Hot Air Balloon", count: "100+ Tours" },
+    { id: 9, image: Tokeyo, title: "Desert Safari", count: "100+ Tours" },
+    {
+      id: 10,
+      image: Istanbul,
+      title: "Architecture Tours",
+      count: "100+ Tours",
+    },
+    { id: 11, image: Bali, title: "Royal Tours", count: "100+ Tours" },
+    { id: 12, image: Rome, title: "Night Tours", count: "100+ Tours" },
+    { id: 13, image: Newyork, title: "Harbour Tours", count: "100+ Tours" },
+    { id: 14, image: Sydney, title: "Historical Tours", count: "100+ Tours" },
+    { id: 15, image: Bankok, title: "Diving Tours", count: "100+ Tours" },
+    { id: 16, image: Paris, title: "Sunset Cruises", count: "100+ Tours" },
+  ],
 };
 
 export default allImages;
