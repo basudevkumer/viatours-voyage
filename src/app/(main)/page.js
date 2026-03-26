@@ -1,5 +1,6 @@
 import Bannar from "@/components/sections/home/Bannar";
 import ChooseTour from "@/components/sections/home/ChooseTour";
+import Footprints from "@/components/sections/home/Footprints";
 import Popular from "@/components/sections/home/Popular";
 import Trending from "@/components/sections/home/Trending";
 import Trip from "@/components/sections/home/Trip";
@@ -11,8 +12,9 @@ const Home = () => {
       <Bannar />
       <Trending />
       <Trip />
-      <ChooseTour/>
-      <Popular/>
+      <ChooseTour />
+      <Popular />
+      <Footprints />
     </>
   );
 };

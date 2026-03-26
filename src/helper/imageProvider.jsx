@@ -26,6 +26,10 @@ import TourBanner from "../../public/images/choses-tour.png";
 import Tikit from "../../public/images/ticket.png";
 import AirBalun from "../../public/images/hot-air-balloon.png";
 import Daimond from "../../public/images/diamond.png";
+import Location from "../../public/images/location.png";
+import Route from "../../public/images/route.png";
+import Person from "../../public/images/person.png";
+import Balloon from "../../public/images/balloon.png";
 
 const allImages = {
   tikit: Tikit,
@@ -244,6 +248,12 @@ const allImages = {
     { id: 14, image: Sydney, title: "Historical Tours", count: "100+ Tours" },
     { id: 15, image: Bankok, title: "Diving Tours", count: "100+ Tours" },
     { id: 16, image: Paris, title: "Sunset Cruises", count: "100+ Tours" },
+  ],
+  footprints: [
+    { id: 1, value: "932M", label: "Total Donations", icon: Location },
+    { id: 2, value: "24M", label: "Campaigns Closed", icon: Route },
+    { id: 3, value: "10M", label: "Happy People", icon: Person },
+    { id: 4, value: "65M", label: "Our Volunteers", icon: Balloon },
   ],
 };
 
