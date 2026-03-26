@@ -1,35 +1,44 @@
+import Image from "next/image";
+
 const TripCard = ({ image, days, location, title, rating, reviews, price }) => {
   return (
-    <div className="rounded-2xl overflow-hidden border border-gray5 bg-white cursor-pointer hover:shadow-lg transition-shadow">
-      {/* Image */}
-      <div className="relative w-full h-52">
-        <Image src={image} alt={title} fill className="object-cover" />
-        {/* Days Badge */}
-        <span className="absolute top-3 left-3 bg-white/80 backdrop-blur-sm text-text-primary body5 px-3 py-1 rounded-full">
-          {days} days
-        </span>
-      </div>
+    <div className="relative rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow w-full h-[450px]">
+      
+      {/* Background Image */}
+      <Image
+        src={image}
+        alt={title}
+        fill
+        className="object-cover"
+      />
 
-      {/* Content */}
-      <div className="p-4">
-        <p className="body5 text-text-secondary mb-1">{location}</p>
-        <h3 className="title3 text-text-dark mb-2 line-clamp-2">{title}</h3>
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+      {/* Days Badge - top left */}
+      <span className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm text-white body5 px-3 py-1 rounded-full">
+        {days} days
+      </span>
+
+      {/* Bottom Content */}
+      <div className="absolute bottom-0 left-0 right-0 p-5">
+        <p className="body5 text-white/70 mb-1">{location}</p>
+        <h3 className="title3 text-white mb-3 line-clamp-2">{title}</h3>
 
         {/* Rating & Price */}
-        <div className="flex items-center justify-between mt-3">
+        <div className="flex items-end justify-between">
           <div className="flex items-center gap-1">
-            <span className="text-accent text-sm">★</span>
-            <span className="body5 text-text-primary font-medium">
-              {rating}
-            </span>
-            <span className="body5 text-text-secondary">({reviews})</span>
+            <span className="text-yellow-400 text-sm">★</span>
+            <span className="body5 text-white font-medium">{rating}</span>
+            <span className="body5 text-white/70">({reviews})</span>
           </div>
           <div className="text-right">
-            <p className="body5 text-text-secondary">From</p>
-            <p className="title3 text-text-dark">${price}</p>
+            <p className="body5 text-white/70">From</p>
+            <p className="title2 text-white">${price}</p>
           </div>
         </div>
       </div>
+
     </div>
   );
 };
