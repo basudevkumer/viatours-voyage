@@ -1,3 +1,7 @@
+import allImages from "./imageProvider";
+
+const {tikit,daimond,airBlaun} =  allImages
+ 
 const navLinks = [
   {
     id: 1,
@@ -72,4 +76,22 @@ export const footerData = [
   },
 ];
 
-export { navLinks, navLinksleft,footerData };
+const tourfeature = [
+  {
+    title: "Ultimate flexibility",
+    img: tikit, 
+    description: "You're in control, with free cancellation and payment.",
+  },
+  {
+    title: "Memorable experiences",
+    img: airBlaun,
+    description: "Browse and book tours and activities so incredible.",
+  },
+  {
+    title: "Quality at our core",
+    img: daimond,
+    description: "High quality standards. Millions of reviews.",
+  },
+];
+
+export { navLinks, navLinksleft, footerData, tourfeature };

@@ -22,8 +22,15 @@ import Sydney from "../../public/images/sydney.jpg";
 import Istanbul from "../../public/images/istanbul.webp";
 import Maldives from "../../public/images/maldivs.jpg";
 import Santorini from "../../public/images/santorini.webp";
+import TourBanner from "../../public/images/choses-tour.png";
+import Tikit from "../../public/images/ticket.png";
+import AirBalun from "../../public/images/hot-air-balloon.png";
+import Daimond from "../../public/images/diamond.png";
 
 const allImages = {
+  tikit: Tikit,
+  daimond: Daimond,
+  airBlaun: AirBalun,
   navlogo: NavImages,
   paymentArry: [
     { id: 1, img: Paypal },
@@ -214,6 +221,7 @@ const allImages = {
       price: "320.00",
     },
   ],
+  tourImages: TourBanner,
 };
 
 export default allImages;
