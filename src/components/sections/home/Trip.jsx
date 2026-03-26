@@ -38,17 +38,19 @@ const Trip = () => {
           className="mySwiper"
         >
           {featuredTrips.map((items, index) => {
-          return  <SwiperSlide key={index}>
-              <TripCard
-                image={items.image.src}
-                price={items.price}
-                days={items.days}
-                location={items.location}
-                title={items.title}
-                rating={items.rating}
-                reviews={items.reviews}
-              />
-            </SwiperSlide>;
+            return (
+              <SwiperSlide key={index}>
+                <TripCard
+                  image={items.image.src}
+                  price={items.price}
+                  days={items.days}
+                  location={items.location}
+                  title={items.title}
+                  rating={items.rating}
+                  reviews={items.reviews}
+                />
+              </SwiperSlide>
+            );
           })}
         </Swiper>
       </div>

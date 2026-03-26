@@ -1,8 +1,22 @@
+"use client";
 import Container from "@/components/shared/Container";
 import PopularCard from "@/components/shared/PopularCard";
+
 import React from "react";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// import required modules
+import { FreeMode, Autoplay } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import allImages from "@/helper/imageProvider";
+
 const Popular = () => {
+  const { popularThings } = allImages;
   return (
     <section>
       <Container>
@@ -16,7 +30,29 @@ const Popular = () => {
             </button>
           </div>
           <div>
-            <PopularCard/>
+            <Swiper
+              slidesPerView={6}
+              spaceBetween={30}
+              freeMode={true}
+              modules={[FreeMode, Autoplay]}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              className="mySwiper"
+            >
+              {popularThings.map((items, index) => {
+                return (
+                  <SwiperSlide key={index}>
+                    <PopularCard
+                      img={items.image}
+                      title={items.title}
+                      num={items.count}
+                    />
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
           </div>
         </div>
       </Container>
