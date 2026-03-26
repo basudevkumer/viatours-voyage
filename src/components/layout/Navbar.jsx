@@ -17,7 +17,7 @@ const Navbar = () => {
               {navLinks.map((items) => {
                 return (
                   <li key={items.id}>
-                    <Link href={items.path} className=" title4 text-white">
+                    <Link href={items.path} className=" title4 text-white transition duration-300 ease-in-out hover:text-accent">
                       {items.label}
                     </Link>
                   </li>
@@ -32,14 +32,14 @@ const Navbar = () => {
                   <li key={items.id}>
                     <Link
                       href={items.href}
-                      className="px-5 py-3 border rounded-[200px] title4 text-white "
+                      className="px-5 py-3 border rounded-[200px] title4 text-white transition duration-300 ease-in-out hover:text-accent"
                     >
                       {items.label}
                     </Link>
                   </li>
                 ) : (
                   <li key={items.id}>
-                    <Link href={items.href} className="title4 text-white">
+                    <Link href={items.href} className="title4 text-white transition duration-300 ease-in-out hover:text-accent">
                       {items.label}
                     </Link>
                   </li>

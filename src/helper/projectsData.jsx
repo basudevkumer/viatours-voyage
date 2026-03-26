@@ -45,4 +45,31 @@ const navLinksleft = [
   { id: 3, label: "Log in", href: "/login" },
 ];
 
-export { navLinks, navLinksleft };
+export const footerData = [
+  {
+    id: 1,
+    title: "Company",
+    links: [
+      { label: "About Us", path: "/about" },
+      { label: "Tourz Reviews", path: "/reviews" },
+      { label: "Contact Us", path: "/contact" },
+      { label: "Travel Guides", path: "/guides" },
+      { label: "Data Policy", path: "/data-policy" },
+      { label: "Cookie Policy", path: "/cookie-policy" },
+      { label: "Legal", path: "/legal" },
+      { label: "Sitemap", path: "/sitemap" },
+    ],
+  },
+  {
+    id: 2,
+    title: "Support",
+    links: [
+      { label: "Get in Touch", path: "/support/contact" },
+      { label: "Help center", path: "/support/help" },
+      { label: "Live chat", path: "/support/live-chat" },
+      { label: "How it works", path: "/how-it-works" },
+    ],
+  },
+];
+
+export { navLinks, navLinksleft,footerData };
