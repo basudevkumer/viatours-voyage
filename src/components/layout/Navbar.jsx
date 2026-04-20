@@ -8,7 +8,7 @@ import { navLinks, navLinksleft } from "@/helper/projectsData";
 const Navbar = () => {
   const { navlogo } = allImages;
   return (
-    <nav className="py-[21px] fixed  top-0 left-0  w-full  border-b border-white">
+    <nav className="py-[21px] fixed  top-0 left-0  w-full z-50 bg-gray-400/50 backdrop-blur-md  border-b border-white">
       <Container>
         <div className="flex items-center  justify-between ">
           <div className="flex  items-center gap-x-[50px]">
