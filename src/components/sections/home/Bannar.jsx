@@ -10,7 +10,7 @@ const Bannar = () => {
   return (
     <section
       style={{ backgroundImage: `url(${banner})` }}
-      className=" w-full object-cover bg-center bg-norepeat h-[854px] "
+      className=" w-full bg-cover  bg-center bg-no-repeat h-[854px] "
     >
       <Container>
         <div className="py-[350px] grid grid-cols-2 gap-[50px]">
