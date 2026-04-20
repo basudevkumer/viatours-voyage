@@ -11,7 +11,7 @@ const navLinks = [
   {
     id: 2,
     label: "Tour",
-    path: "/tour",
+    path: "",
     children: [
       { label: "Tour List", path: "/tour/list" },
       { label: "Tour Details", path: "/tour/details" },
@@ -20,26 +20,26 @@ const navLinks = [
   {
     id: 3,
     label: "Destination",
-    path: "/destination",
+    path: "",
   },
   {
     id: 4,
     label: "Activities",
-    path: "/activities",
+    path: "",
   },
   {
     id: 5,
     label: "Pages",
-    path: "/pages",
+    path: "",
     children: [
-      { label: "About", path: "/about" },
-      { label: "FAQ", path: "/faq" },
+      { label: "About", path: "" },
+      { label: "FAQ", path: "" },
     ],
   },
   {
     id: 6,
     label: "Contact",
-    path: "/contact",
+    path: "",
   },
 ];
 

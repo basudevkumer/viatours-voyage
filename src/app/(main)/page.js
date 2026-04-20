@@ -4,6 +4,7 @@ import ChooseTour from "@/components/sections/home/ChooseTour";
 import Footprints from "@/components/sections/home/Footprints";
 import Popular from "@/components/sections/home/Popular";
 import Travel from "@/components/sections/home/Travel";
+import Travelers from "@/components/sections/home/Travelers";
 import Trending from "@/components/sections/home/Trending";
 import Trip from "@/components/sections/home/Trip";
 import React from "react";
@@ -18,6 +19,7 @@ const Home = () => {
       <Popular />
       <Footprints />
       <BestPlace/>
+      <Travelers/>
       <Travel/>
     </>
   );

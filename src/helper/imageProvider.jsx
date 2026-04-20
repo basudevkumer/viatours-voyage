@@ -30,6 +30,13 @@ import Location from "../../public/images/location.png";
 import Route from "../../public/images/route.png";
 import Person from "../../public/images/person.png";
 import Balloon from "../../public/images/balloon.png";
+import Travelers from "../../public/images/traverls-comment.png";
+import TravelerOne from "../../public/images/traveler1.png";
+import TravelerTwo from "../../public/images/traveler2.png";
+import TravelerThree from "../../public/images/traveler3.png";
+import TravelerFour from "../../public/images/traveler4.png";
+import TravelerFive from "../../public/images/traveler5.png";
+import TravelerSix from "../../public/images/traveler6.png";
 
 const allImages = {
   tikit: Tikit,
@@ -418,23 +425,145 @@ const allImages = {
     },
   ],
   traveItems: [
-  { id: 1, image: Santorini, category: "Trips", date: "April 06 2023", author: "Ali Tufan", title: "Kenya vs Tanzania Safari: The Better African Safari Experience" },
-  { id: 2, image: Paris, category: "Travel", date: "March 12 2023", author: "Sarah Lee", title: "Top 10 Hidden Gems in Paris You Must Visit This Year" },
-  { id: 3, image: Cappadocia, category: "Adventure", date: "May 18 2023", author: "John Doe", title: "Hot Air Balloon Rides in Cappadocia: Everything You Need to Know" },
-  { id: 4, image: Maldives, category: "Beach", date: "June 01 2023", author: "Emma Stone", title: "Maldives on a Budget: Tips for an Affordable Paradise Getaway" },
-  { id: 5, image: Tokeyo, category: "Culture", date: "July 22 2023", author: "Kenji Mori", title: "Tokyo Street Food Guide: Where Locals Actually Eat" },
-  { id: 6, image: Bankok, category: "Food", date: "August 09 2023", author: "Nina Patel", title: "Bangkok Night Markets: The Ultimate Food Lover's Guide" },
-  { id: 7, image: Rome, category: "History", date: "September 14 2023", author: "Marco Rossi", title: "Walking Through Ancient Rome: A Guide to the Eternal City" },
-  { id: 8, image: Bali, category: "Wellness", date: "October 03 2023", author: "Lily Chen", title: "Bali Yoga Retreats: Finding Peace Among the Rice Terraces" },
-  { id: 9, image: London, category: "Trips", date: "November 11 2023", author: "James Hunt", title: "London in Winter: Why the Cold Season is the Best Time to Visit" },
-  { id: 10, image: Dubai, category: "Luxury", date: "December 25 2023", author: "Aisha Khan", title: "Dubai's Most Luxurious Hotels and Experiences for 2024" },
-  { id: 11, image: Singapure, category: "City", date: "January 07 2024", author: "Wei Tan", title: "Singapore in 48 Hours: The Perfect Weekend Itinerary" },
-  { id: 12, image: Istanbul, category: "Culture", date: "February 14 2024", author: "Layla Hassan", title: "Istanbul's Grand Bazaar: Shopping Tips and Hidden Stalls" },
-  { id: 13, image: Barcelona, category: "Art", date: "March 21 2024", author: "Carlos Vega", title: "Gaudi's Barcelona: A Self-Guided Architecture Walking Tour" },
-  { id: 14, image: Phuket, category: "Beach", date: "April 30 2024", author: "Tom Rivers", title: "Phuket Island Hopping: The Best Beaches Beyond Patong" },
-  { id: 15, image: Newyork, category: "City", date: "May 15 2024", author: "Jessica Moore", title: "New York Like a Local: Neighborhoods You Have Never Explored" },
-  { id: 16, image: Sydney, category: "Adventure", date: "June 20 2024", author: "Chris Blake", title: "Sydney Harbour Bridge Climb: Is It Worth the Hype?" },
-],
+    {
+      id: 1,
+      image: Santorini,
+      category: "Trips",
+      date: "April 06 2023",
+      author: "Ali Tufan",
+      title: "Kenya vs Tanzania Safari: The Better African Safari Experience",
+    },
+    {
+      id: 2,
+      image: Paris,
+      category: "Travel",
+      date: "March 12 2023",
+      author: "Sarah Lee",
+      title: "Top 10 Hidden Gems in Paris You Must Visit This Year",
+    },
+    {
+      id: 3,
+      image: Cappadocia,
+      category: "Adventure",
+      date: "May 18 2023",
+      author: "John Doe",
+      title: "Hot Air Balloon Rides in Cappadocia: Everything You Need to Know",
+    },
+    {
+      id: 4,
+      image: Maldives,
+      category: "Beach",
+      date: "June 01 2023",
+      author: "Emma Stone",
+      title: "Maldives on a Budget: Tips for an Affordable Paradise Getaway",
+    },
+    {
+      id: 5,
+      image: Tokeyo,
+      category: "Culture",
+      date: "July 22 2023",
+      author: "Kenji Mori",
+      title: "Tokyo Street Food Guide: Where Locals Actually Eat",
+    },
+    {
+      id: 6,
+      image: Bankok,
+      category: "Food",
+      date: "August 09 2023",
+      author: "Nina Patel",
+      title: "Bangkok Night Markets: The Ultimate Food Lover's Guide",
+    },
+    {
+      id: 7,
+      image: Rome,
+      category: "History",
+      date: "September 14 2023",
+      author: "Marco Rossi",
+      title: "Walking Through Ancient Rome: A Guide to the Eternal City",
+    },
+    {
+      id: 8,
+      image: Bali,
+      category: "Wellness",
+      date: "October 03 2023",
+      author: "Lily Chen",
+      title: "Bali Yoga Retreats: Finding Peace Among the Rice Terraces",
+    },
+    {
+      id: 9,
+      image: London,
+      category: "Trips",
+      date: "November 11 2023",
+      author: "James Hunt",
+      title: "London in Winter: Why the Cold Season is the Best Time to Visit",
+    },
+    {
+      id: 10,
+      image: Dubai,
+      category: "Luxury",
+      date: "December 25 2023",
+      author: "Aisha Khan",
+      title: "Dubai's Most Luxurious Hotels and Experiences for 2024",
+    },
+    {
+      id: 11,
+      image: Singapure,
+      category: "City",
+      date: "January 07 2024",
+      author: "Wei Tan",
+      title: "Singapore in 48 Hours: The Perfect Weekend Itinerary",
+    },
+    {
+      id: 12,
+      image: Istanbul,
+      category: "Culture",
+      date: "February 14 2024",
+      author: "Layla Hassan",
+      title: "Istanbul's Grand Bazaar: Shopping Tips and Hidden Stalls",
+    },
+    {
+      id: 13,
+      image: Barcelona,
+      category: "Art",
+      date: "March 21 2024",
+      author: "Carlos Vega",
+      title: "Gaudi's Barcelona: A Self-Guided Architecture Walking Tour",
+    },
+    {
+      id: 14,
+      image: Phuket,
+      category: "Beach",
+      date: "April 30 2024",
+      author: "Tom Rivers",
+      title: "Phuket Island Hopping: The Best Beaches Beyond Patong",
+    },
+    {
+      id: 15,
+      image: Newyork,
+      category: "City",
+      date: "May 15 2024",
+      author: "Jessica Moore",
+      title: "New York Like a Local: Neighborhoods You Have Never Explored",
+    },
+    {
+      id: 16,
+      image: Sydney,
+      category: "Adventure",
+      date: "June 20 2024",
+      author: "Chris Blake",
+      title: "Sydney Harbour Bridge Climb: Is It Worth the Hype?",
+    },
+  ],
+
+  travelersImages: Travelers,
+  travelerArr: [
+    { id: 1, img: TravelerOne },
+    { id: 2, img: TravelerTwo },
+    { id: 3, img: TravelerThree },
+    { id: 4, img: TravelerFour },
+    { id: 5, img: TravelerFive },
+    { id: 6, img: TravelerSix },
+  ],
 };
 
 export default allImages;
