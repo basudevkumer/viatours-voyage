@@ -19,7 +19,7 @@ const Travelers = () => {
   return (
     <section className="pt-[75px] pb-[90px] bg-text-dark mt-[105px]">
       <Container>
-        <div className="grid grid-cols-2 gap-x-[200px]">
+        <div className="grid grid-cols-2 gap-x-[200px]  overflow-hidden">
           <div>
             <h4 className="heading !text-[30px] text-bg-white max-w-[277.4]">
               What our Travelers are saying
