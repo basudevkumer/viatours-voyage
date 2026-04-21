@@ -67,7 +67,7 @@ const Travelers = () => {
             <div className="flex justify-between mt-10">
                  {
                     travelerArr.map((items)=>{
-                        return <Image width={100} height={30} src={items.img} key={items.id}/>
+                        return <Image width={100} height={30} alt="travelers-card-images" src={items.img} key={items.id}/>
                     })
                  }
             </div>
