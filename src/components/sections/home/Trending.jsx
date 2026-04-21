@@ -17,7 +17,7 @@ const Trending = () => {
               see all
             </button>
           </div>
-          <div className="grid grid-cols-4 gap-[30px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px]">
             {trendingDestinations.map((items, index) => {
               return (
                 <TrendingCard
