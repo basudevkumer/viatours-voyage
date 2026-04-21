@@ -1,16 +1,30 @@
-import allImages from "@/helper/imageProvider";
 import Image from "next/image";
-import React from "react";
 
 const PopularCard = ({ title, num, img }) => {
   return (
-    <div className=" relative overflow-hidden rounded-[12px]  w-[190px]   h-[220px]">
-      <div className="absolute z-20 w-full top-0 left-0 h-full bg-gradient-to-t from-[#05073C]/70 from-10% via-[#05073C]/50 via-40% to-transparent "></div>
-      <Image src={img} alt={title} className="object-cover" fill />
-      <div className=" absolute bottom-6 left-1/2 translate-x-[-50%]   z-30">
-        <p className="title2 text-white ">{title} </p>
-        <p className="mt-1 title4 text-white">{num} </p>
+    <div className="relative overflow-hidden rounded-[12px] w-full h-[160px] sm:h-[185px] lg:h-[220px] cursor-pointer group">
+
+      {/* Overlay */}
+      <div className="absolute inset-0 z-20 bg-gradient-to-t from-[#05073C]/70 from-10% via-[#05073C]/50 via-40% to-transparent" />
+
+      {/* Image */}
+      <Image
+        src={img}
+        alt={title ?? "Popular activity"}
+        fill
+        className="object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+
+      {/* Text */}
+      <div className="absolute bottom-4 sm:bottom-5 lg:bottom-6 left-1/2 -translate-x-1/2 z-30 text-center w-full px-2">
+        <p className="title4 sm:title3 lg:title2 text-white whitespace-nowrap overflow-hidden text-ellipsis">
+          {title}
+        </p>
+        <p className="mt-0.5 sm:mt-1 body5 sm:title4 text-white/80">
+          {num}
+        </p>
       </div>
+
     </div>
   );
 };
